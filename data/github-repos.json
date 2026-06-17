@@ -2,34 +2,26 @@
   "repos": [
     {
       "id": "interactive-monte-carlo",
-      "name": "Interactive Monte Carlo Simulations",
-      "description": "Educational interactive simulations for high school students exploring probability, statistics, and random processes. Includes visualizations of the Law of Large Numbers, birthday paradox, and random walks using $$ \\text{LLN} $$ principles.",
-      "link": "https://github.com/SasiMitraB/monte-carlo-sims",
+      "name": "Monte Carlo Simulations",
+      "description": "This repository contains interactive physics simulations demonstrated during Science Day 2025 at IISER Tirupati. Includes Random Walks, Brownian Motion, Ising Model, Viscek Model, and Reaction Diffusion System.",
+      "link": "https://github.com/SasiMitraB/MonteCarloSimulations",
       "tags": ["education", "simulation", "interactive", "statistics"],
-      "featured": true
-    },
-    {
-      "id": "astrophysics-simulations",
-      "name": "3D Fluid Dynamics Solver",
-      "description": "A WebGL-based fluid simulation engine for visualizing turbulent flows and dynamic systems. Originally developed for this website's background, now available as a standalone educational tool.",
-      "link": "https://github.com/SasiMitraB/webgl-fluid-sim",
-      "tags": ["simulation", "physics", "webgl", "visualization"],
-      "featured": true
-    },
-    {
-      "id": "coding-club-tutorials",
-      "name": "IISER Tirupati Coding Club Resources",
-      "description": "Collection of tutorials, problem sets, and solutions from the IISER coding club. Covers Python, competitive programming, and practical coding skills for scientists.",
-      "link": "https://github.com/IISER-CodeClub/resources",
-      "tags": ["programming", "education", "python"],
       "featured": false
     },
     {
-      "id": "ism-analyzer",
-      "name": "Interstellar Medium Data Analyzer",
-      "description": "Tools for statistical analysis of 3D reconstructed ISM distributions. Implements Minkowski functionals and morphological analysis for characterizing cosmic structure.",
-      "link": "https://github.com/SasiMitraB/ism-analyzer",
-      "tags": ["astrophysics", "data-analysis", "research"],
+      "id": "henon-heiles-system",
+      "name": "Henon Heiles System",
+      "description": "Implementation and Analysis of the Henon Heiles system using Python. This was done as part of a project for the Non-Linear Dynamics course I took in my sixth semester at IISER Tirupati.",
+      "link": "https://github.com/SasiMitraB/HenonHeilesSystem",
+      "tags": [ "simulation", "python"],
+      "featured": false
+    },
+    {
+      "id": "citation-constellation",
+      "name": "Citation Constellation",
+      "description": "Citation Constellation is a Python tool for building a structured map of how a paper is cited. Instead of a raw count, it shows the sections where citations appear, highlights shared authors, and lets you filter the citation set by topic keywords and author lists. It supports both a CLI (for terminal workflows) and a rich web UI with live progress.",
+      "link": "https://github.com/SasiMitraB/CitationConstellation",
+      "tags": ["citations", "research"],
       "featured": false
     }
   ]
