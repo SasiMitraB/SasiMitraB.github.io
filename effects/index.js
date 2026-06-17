@@ -1114,7 +1114,9 @@ let bloomFramebuffers = [];
 let sunrays;
 let sunraysTemp;
 
-let ditheringTexture = createTextureAsync('LDR_LLL1_0.png');
+const effectScriptUrl = document.currentScript ? document.currentScript.src : window.location.href;
+const effectRootUrl = new URL('../', effectScriptUrl).href;
+let ditheringTexture = createTextureAsync(effectRootUrl + 'LDR_LLL1_0.png');
 
 const blurProgram            = new Program(blurVertexShader, blurShader);
 const copyProgram            = new Program(baseVertexShader, copyShader);
