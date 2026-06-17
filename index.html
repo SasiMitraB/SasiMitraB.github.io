@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +11,7 @@
     <link rel="shortcut icon" href="./favicon.svg">
     <link rel="apple-touch-icon" href="./app_badge.png">
     <link rel="manifest" href="./site.webmanifest">
-    
+
     <link rel="stylesheet" href="./style/site-theme.css">
 
     <!-- KaTeX for LaTeX math rendering -->
@@ -22,6 +23,7 @@
     <!-- Component Loader -->
     <script src="./ui/components/component-loader.js"></script>
 </head>
+
 <body data-background-mode="true">
     <canvas id="fluid-canvas" aria-hidden="true"></canvas>
     <div class="background-overlay" aria-hidden="true"></div>
@@ -37,8 +39,10 @@
                     Avid sleeper by day <br>
                 </p>
                 <div class="hero-actions">
-                    <a href="https://youtu.be/dQw4w9WgXcQ?si=SZUPrOVCIpVc3DK8" class="btn btn-primary">Download CV</a>
-                    <a href="mailto:beharasasimitra211141@students.iisertirupati.ac.in" class="btn btn-secondary" style="background: blur 100px">Get in touch</a>
+                    <a href="https://github.com/SasiMitraB/CV_in_latex/releases/download/cv-latest/main.pdf"
+                        class="btn btn-primary">Download CV</a>
+                    <a href="mailto:beharasasimitra211141@students.iisertirupati.ac.in" class="btn btn-secondary"
+                        style="background: blur 100px">Get in touch</a>
                 </div>
             </section>
 
@@ -47,10 +51,15 @@
                 <div class="about-copy">
                     <h2>Hello There!</h2>
                     <p>
-                        I'm <strong>Sasi Mitra</strong>, a Project Associate at Indian Institute of Science. I completed my Bachelor's and Masters from Indian Institute of Science Education and Research, Tirupati, and I was an FRT Scholar at Australian National University. I am broadly interested in Fluid Dynamics in Astrophysics, and how turbulence impacts other astrophysical processes (Star Formation, Stellar Structure and Evolution, etc.) 
+                        I'm <strong>Sasi Mitra</strong>, a Project Associate at Indian Institute of Science. I completed
+                        my Bachelor's and Masters from Indian Institute of Science Education and Research, Tirupati, and
+                        I was an FRT Scholar at Australian National University. I am broadly interested in Fluid
+                        Dynamics in Astrophysics, and how turbulence impacts other astrophysical processes (Star
+                        Formation, Stellar Structure and Evolution, etc.)
                     </p>
                     <p>
-                        Beyond astrophysics, I find myself trying to appreciate the technical aspects of many different topics, as long as there's someone enthuastic to talk with. 
+                        Beyond astrophysics, I find myself trying to appreciate the technical aspects of many different
+                        topics, as long as there's someone enthuastic to talk with.
                     </p>
                 </div>
             </section>
@@ -65,21 +74,29 @@
                         <span class="timeline-date">May 2026 - Present</span>
                         <article class="timeline-content">
                             <h3>Project Associate at IISc, Bengaluru</h3>
-                            <p>I am working with Prof. Prateek Sharma (Department of Physics, IISc) as a Project Associate I. The project involved is trying to improve accuracy of low-resolution ISM simulations with sub-grid physics implemented using Machine Learning.</p>
+                            <p>I am working with Prof. Prateek Sharma (Department of Physics, IISc) as a Project
+                                Associate I. The project involved is trying to improve accuracy of low-resolution ISM
+                                simulations with sub-grid physics implemented using Machine Learning.</p>
                         </article>
                     </li>
                     <li class="timeline-item">
                         <span class="timeline-date">Aug 2025 - Feb 2026</span>
                         <article class="timeline-content">
                             <h3>FRT Scholar at Australian National University</h3>
-                            <p>Worked with Dr. Amit Seta (RSAA, ANU) for my Master's thesis, studying the statistical properties of 3D reconstrocutions of the Interstellar Medium.</p>
+                            <p>Worked with Dr. Amit Seta (RSAA, ANU) for my Master's thesis, studying the statistical
+                                properties of 3D reconstrocutions of the Interstellar Medium.</p>
                         </article>
                     </li>
                     <li class="timeline-item">
                         <span class="timeline-date">Dec 2021 - May 2026</span>
                         <article class="timeline-content">
                             <h3>BS-MS Physics at IISER Tirupati</h3>
-                            <p>Aside from coursework, I had a chance to work with Dr. Amit Seta (RSAA, ANU) on two projects. The first project, done as a semester project, made use of Minkowski Functionals to analyze the morphology of Magnetic fields in the Small-Scale Turbulent Dynamo, which resulted in a publication in <a href="https://doi.org/10.1093/mnras/stag348">MNRAS</a>. The second project was my Master's thesis, and was undertaken in part at ANU.</p>
+                            <p>Aside from coursework, I had a chance to work with Dr. Amit Seta (RSAA, ANU) on two
+                                projects. The first project, done as a semester project, made use of Minkowski
+                                Functionals to analyze the morphology of Magnetic fields in the Small-Scale Turbulent
+                                Dynamo, which resulted in a publication in <a
+                                    href="https://doi.org/10.1093/mnras/stag348">MNRAS</a>. The second project was my
+                                Master's thesis, and was undertaken in part at ANU.</p>
                         </article>
                     </li>
                     <li class="timeline-item">
@@ -91,13 +108,13 @@
                     </li>
                 </ol>
             </section>
-        
+
             <section class="publications" id="projects">
                 <div class="section-header">
                     <h2>Selected Research</h2>
                     <p>Publications and preprints.</p>
                 </div>
-                
+
                 <div class="carousel-container">
                     <button class="carousel-btn prev-btn" aria-label="Previous">&larr;</button>
                     <div class="carousel-track" id="papers-track">
@@ -113,13 +130,15 @@
                 </div>
 
                 <div class="carousel-container">
-                    <button class="carousel-btn substack-prev-btn" id="substack-prev-btn" aria-label="Previous post">&larr;</button>
+                    <button class="carousel-btn substack-prev-btn" id="substack-prev-btn"
+                        aria-label="Previous post">&larr;</button>
                     <div class="carousel-track" id="substack-track"></div>
-                    <button class="carousel-btn substack-next-btn" id="substack-next-btn" aria-label="Next post">&rarr;</button>
+                    <button class="carousel-btn substack-next-btn" id="substack-next-btn"
+                        aria-label="Next post">&rarr;</button>
                 </div>
             </section>
 
-        
+
             <div id="paper-modal" class="modal-backdrop" aria-hidden="true">
                 <div class="modal-panel panel">
                     <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -139,4 +158,5 @@
     <script src="./ui/carousels/papers-carousel.js"></script>
     <script src="./ui/carousels/substack-carousel.js"></script>
 </body>
+
 </html>
