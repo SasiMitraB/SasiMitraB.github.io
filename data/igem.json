@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "id": "igem-2024",
+      "year": "2024",
+      "title": "Biosynthetic Production of Specialty Chemicals",
+      "team": "IISER Tirupati iGEM Team",
+      "role": "Computational Modeling & Data Analysis",
+      "description": "Participated in iGEM competition developing engineered bacteria for sustainable production of bioactive compounds. Contributed to mathematical modeling of metabolic pathways and experimental data interpretation.",
+      "link": "https://example.com",
+      "tags": ["synthetic-biology", "iGEM", "computational-biology"]
+    },
+    {
+      "id": "igem-2023",
+      "year": "2023",
+      "title": "Bioremediation Using Engineered Microbes",
+      "team": "IISER Tirupati",
+      "role": "Project Contributor",
+      "description": "Worked on bioremediation strategies using genetically engineered bacteria. Involved in literature review, experimental planning, and analysis of microbial growth kinetics.",
+      "link": "#",
+      "tags": ["synthetic-biology", "environmental-science"]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal website of Sasi Mitra Behara">
+    <title>Sasi Mitra Behara</title>
+    <meta name="theme-color" content="#1a1512">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="shortcut icon" href="./favicon.svg">
+    <link rel="apple-touch-icon" href="./app_badge.png">
+    <link rel="manifest" href="./site.webmanifest">
+    
+    <link rel="stylesheet" href="./style/site-theme.css">
+
+    <!-- KaTeX for LaTeX math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <script defer src="./utils/katex-init.js"></script>
+
+    <!-- Component Loader -->
+    <script src="./ui/components/component-loader.js"></script>
+</head>
+<body data-background-mode="true">
+    <canvas id="fluid-canvas" aria-hidden="true"></canvas>
+    <div class="background-overlay" aria-hidden="true"></div>
+
+    <div class="site-wrapper">
+        <div id="navbar-container"></div>
+
+        <main>
+            <section class="hero hero-featured">
+                <h1>Behara <span class="highlight">Sasi Mitra</span></h1>
+                <p class="subtitle">
+                    Astrophysics student by night, <br>
+                    Avid sleeper by day <br>
+                </p>
+                <div class="hero-actions">
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=SZUPrOVCIpVc3DK8" class="btn btn-primary">Download CV</a>
+                    <a href="mailto:beharasasimitra211141@students.iisertirupati.ac.in" class="btn btn-secondary" style="background: blur 100px">Get in touch</a>
+                </div>
+            </section>
+
+            <section class="panel about-grid" id="about">
+                <img class="about-image" src="./sasi_drawing.png" alt="Portrait drawing of Sasi Mitra">
+                <div class="about-copy">
+                    <h2>Hello There!</h2>
+                    <p>
+                        I'm <strong>Sasi Mitra</strong>, a fifth-year BS-MS student at IISER Tirupati. I am currently completing my Master's thesis at the Australian National University under the supervision of Dr. Amit Seta, where I focus on the statistical properties of 3D Interstellar Medium (ISM) distributions.
+                    </p>
+                    <p>
+                        Beyond astrophysics, I'm a developer who loves building practical web tools. This website serves as a portfolio of my research, a platform for my thoughts on science and tech, and a gallery for the random—but hopefully useful—projects I build. 
+                    </p>
+                </div>
+            </section>
+
+            <section class="panel timeline-section" id="timeline">
+                <div class="timeline-header">
+                    <h2>Career Timeline</h2>
+                    <p>A few milestones from my academic and builder journey so far.</p>
+                </div>
+                <ol class="career-timeline">
+                    <li class="timeline-item">
+                        <span class="timeline-date">Aug 2025 - Feb 2026</span>
+                        <article class="timeline-content">
+                            <h3>FRT Scholar at Australian National University</h3>
+                            <p>Worked with Dr. Amit Seta (RSAA, ANU) for my Master's thesis, studying the statistical properties of 3D reconstrocutions of the Interstellar Medium.</p>
+                        </article>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-date">Dec 2021 - Present</span>
+                        <article class="timeline-content">
+                            <h3>BS-MS Physics at IISER Tirupati</h3>
+                            <p>Aside from coursework, I had a chance to work with Dr. Amit Seta (RSAA, ANU) on two projects. The first project, done as a semester project, made use of Minkowski Functionals to analyze the morphology of Magnetic fields in the Small-Scale Turbulent Dynamo, which resulted in a publication in <a href="https://doi.org/10.1093/mnras/stag348">MNRAS</a>. The second project, currently in progress is for my Master's thesis, and was undertaken in part at ANU.</p>
+                        </article>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="timeline-date">2012 - 2021</span>
+                        <article class="timeline-content">
+                            <h3>Sri Sri Ravishankar Vidya Mandir, Bangalore North</h3>
+                            <p>Completed my middle and high school education here.</p>
+                        </article>
+                    </li>
+                </ol>
+            </section>
+        
+            <section class="publications" id="projects">
+                <div class="section-header">
+                    <h2>Selected Research</h2>
+                    <p>Publications and preprints.</p>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn" aria-label="Previous">&larr;</button>
+                    <div class="carousel-track" id="papers-track">
+                    </div>
+                    <button class="carousel-btn next-btn" aria-label="Next">&rarr;</button>
+                </div>
+            </section>
+
+            <section class="substack" id="writing">
+                <div class="section-header">
+                    <h2>Substack Writing</h2>
+                    <p>Latest posts from my newsletter.</p>
+                </div>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn substack-prev-btn" id="substack-prev-btn" aria-label="Previous post">&larr;</button>
+                    <div class="carousel-track" id="substack-track"></div>
+                    <button class="carousel-btn substack-next-btn" id="substack-next-btn" aria-label="Next post">&rarr;</button>
+                </div>
+            </section>
+
+        
+            <div id="paper-modal" class="modal-backdrop" aria-hidden="true">
+                <div class="modal-panel panel">
+                    <button class="modal-close" aria-label="Close modal">&times;</button>
+                    <div class="modal-meta" id="modal-meta"></div>
+                    <h3 class="modal-title" id="modal-title"></h3>
+                    <p class="modal-authors" id="modal-authors"></p>
+                    <div class="modal-abstract" id="modal-abstract"></div>
+                    <div class="modal-links" id="modal-links"></div>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+    <script src="./effects/index.js"></script>
+    <script src="./ui/carousels/papers-carousel.js"></script>
+    <script src="./ui/carousels/substack-carousel.js"></script>
+</body>
+</html>

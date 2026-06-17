@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "astro-club-talk-2024",
+      "type": "Talk",
+      "title": "From Simulations to Stars: Computational Astrophysics",
+      "date": "2024-03-15",
+      "venue": "IISER Tirupati Astro Club",
+      "description": "An interactive talk on computational methods in astrophysics. Demonstrated fluid simulations and discussed how numerical methods help us understand cosmic phenomena like interstellar turbulence and starburst regions.",
+      "link": "https://example.com",
+      "tags": ["astrophysics", "education", "simulation"]
+    },
+    {
+      "id": "science-youtube-2024",
+      "type": "Video",
+      "title": "Magnetic Fields & Turbulence: Why Stars Form the Way They Do",
+      "date": "2024-02-01",
+      "venue": "YouTube (Personal Channel)",
+      "description": "A 15-minute explainer video breaking down complex astrophysics concepts. Explores the role of $$ \\mathbf{B} $$-fields in turbulent media and star formation efficiency.",
+      "link": "https://youtube.com/example",
+      "tags": ["astrophysics", "science-communication", "video"]
+    },
+    {
+      "id": "astro-club-workshop-2023",
+      "type": "Workshop",
+      "title": "Python for Computational Astronomy",
+      "date": "2023-11-20",
+      "venue": "IISER Tirupati Coding Club",
+      "description": "A hands-on workshop teaching practical coding skills for astronomers. Covered numerical simulations, data analysis, and visualization techniques using NumPy and Matplotlib.",
+      "link": "#",
+      "tags": ["programming", "education", "astronomy"]
+    }
+  ]
+}
