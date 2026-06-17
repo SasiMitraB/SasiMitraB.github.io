@@ -8,7 +8,11 @@
       "role": "Web Developer",
       "description": "Helped Develop the website in which the team presented their results on the iGEM page.",
       "link": "https://2022.igem.wiki/iiser-tirupati-india/index.html",
-      "tags": ["synthetic-biology", "iGEM", "web-development"]
+      "tags": [
+        "synthetic-biology",
+        "iGEM",
+        "web-development"
+      ]
     },
     {
       "id": "igem-2023",
@@ -17,8 +21,12 @@
       "team": "IISER Tirupati iGEM Team",
       "role": "Web Developer",
       "description": "Helped Develop the website in which the team presented their results on the iGEM page.",
-      "link": "#",
-      "tags": ["synthetic-biology", "iGEM", "web-development"]
+      "link": "https://2023.igem.wiki/iiser-tirupati-india/index.html",
+      "tags": [
+        "synthetic-biology",
+        "iGEM",
+        "web-development"
+      ]
     }
   ]
 }
