@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projects - Sasi Mitra Behara">
+    <title>Projects | Sasi Mitra Behara</title>
+    <meta name="theme-color" content="#1a1512">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="shortcut icon" href="./favicon.svg">
+    <link rel="apple-touch-icon" href="./app_badge.png">
+    <link rel="manifest" href="./site.webmanifest">
+
+    <link rel="stylesheet" href="./style/site-theme.css">
+
+    <!-- KaTeX for LaTeX math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <script defer src="./utils/katex-init.js"></script>
+
+    <!-- Component Loader -->
+    <script src="./ui/components/component-loader.js"></script>
+</head>
+<body data-background-mode="true">
+    <canvas id="fluid-canvas" aria-hidden="true"></canvas>
+    <div class="background-overlay" aria-hidden="true"></div>
+
+    <div class="site-wrapper">
+        <div id="navbar-container"></div>
+
+        <main>
+            <section class="hero">
+                <h1>Projects <br><span class="highlight">&amp; Contributions</span></h1>
+                <p class="subtitle">
+                    Work across synth bio, science communication, and code.<br>
+                    Creating tools and knowledge for everyone.
+                </p>
+            </section>
+
+            <!-- iGEM Projects Section -->
+            <section class="projects-section">
+                <div class="section-header">
+                    <h2>iGEM & Synthetic Biology</h2>
+                    <p>Interdisciplinary projects in genetic engineering and synthetic biology.</p>
+                </div>
+                <div class="projects-grid" id="igem-container">
+                    <p class="loading-message">Loading projects...</p>
+                </div>
+            </section>
+
+            <!-- Science Communication Section -->
+            <section class="projects-section">
+                <div class="section-header">
+                    <h2>Science Communication</h2>
+                    <p>Talks, videos, and content making science accessible to everyone.</p>
+                </div>
+                <div class="projects-grid" id="scicomm-container">
+                    <p class="loading-message">Loading content...</p>
+                </div>
+            </section>
+
+            <!-- GitHub Repositories Section -->
+            <section class="projects-section">
+                <div class="section-header">
+                    <h2>Open Source &amp; Tools</h2>
+                    <p>Educational simulations, interactive tools, and useful utilities.</p>
+                </div>
+                <div class="projects-grid" id="github-container">
+                    <p class="loading-message">Loading repositories...</p>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+    <script src="./effects/index.js"></script>
+    <script src="./ui/rendering/projects-renderer.js"></script>
+</body>
+</html>

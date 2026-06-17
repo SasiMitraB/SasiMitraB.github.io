@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "bibtex-parse-js": "^0.0.24"
+  }
+}
