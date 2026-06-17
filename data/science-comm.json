@@ -1,34 +1,24 @@
 {
   "items": [
     {
-      "id": "astro-club-talk-2024",
+      "id": "lomb-scargle-periodogram",
       "type": "Talk",
-      "title": "From Simulations to Stars: Computational Astrophysics",
-      "date": "2024-03-15",
-      "venue": "IISER Tirupati Astro Club",
-      "description": "An interactive talk on computational methods in astrophysics. Demonstrated fluid simulations and discussed how numerical methods help us understand cosmic phenomena like interstellar turbulence and starburst regions.",
-      "link": "https://example.com",
-      "tags": ["astrophysics", "education", "simulation"]
+      "title": "Algorithms for Data Analysis: Lomb Scargle Periodograms",
+      "date": "2023-07-11",
+      "venue": "Celestic, IISER Tirupati",
+      "description": "In this talk, we aim to provide an intuitive understanding of Lomb-Scargle Periodograms and how it is applied to Astronomical Data using Python and try to find an exoplanet from the data collected by the TESS telescope.",
+      "link": "https://youtu.be/Z8vVrX90Jmo?si=ku-vJkyqzsXtROuu",
+      "tags": ["astrophysics", "lomb-scargle-periodogram"]
     },
     {
-      "id": "science-youtube-2024",
-      "type": "Video",
-      "title": "Magnetic Fields & Turbulence: Why Stars Form the Way They Do",
-      "date": "2024-02-01",
-      "venue": "YouTube (Personal Channel)",
-      "description": "A 15-minute explainer video breaking down complex astrophysics concepts. Explores the role of $$ \\mathbf{B} $$-fields in turbulent media and star formation efficiency.",
-      "link": "https://youtube.com/example",
-      "tags": ["astrophysics", "science-communication", "video"]
-    },
-    {
-      "id": "astro-club-workshop-2023",
-      "type": "Workshop",
-      "title": "Python for Computational Astronomy",
-      "date": "2023-11-20",
-      "venue": "IISER Tirupati Coding Club",
-      "description": "A hands-on workshop teaching practical coding skills for astronomers. Covered numerical simulations, data analysis, and visualization techniques using NumPy and Matplotlib.",
-      "link": "#",
-      "tags": ["programming", "education", "astronomy"]
+      "id": "mars-2020-mission",
+      "type": "Talk",
+      "title": "Space Mission Series: Mars 2020",
+      "date": "2022-04-01",
+      "venue": "Celestic, IISER Tirupati",
+      "description": "A talk I gave at the Astrophysics Club at IISER Tirupati during my first year on the Mars 2020 Mission",
+      "link": "https://youtu.be/aGTwSo_oCPI?si=0NRj6OtZvj-aV4az",
+      "tags": ["astrophysics", "mars-2020"]
     }
   ]
 }

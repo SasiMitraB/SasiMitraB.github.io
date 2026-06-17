@@ -1,24 +1,24 @@
 {
   "projects": [
     {
-      "id": "igem-2024",
-      "year": "2024",
-      "title": "Biosynthetic Production of Specialty Chemicals",
+      "id": "igem-2022",
+      "year": "2022",
+      "title": "AptaSteles: a novel aptamer-based diagnostic kit",
       "team": "IISER Tirupati iGEM Team",
-      "role": "Computational Modeling & Data Analysis",
-      "description": "Participated in iGEM competition developing engineered bacteria for sustainable production of bioactive compounds. Contributed to mathematical modeling of metabolic pathways and experimental data interpretation.",
-      "link": "https://example.com",
-      "tags": ["synthetic-biology", "iGEM", "computational-biology"]
+      "role": "Web Developer",
+      "description": "Helped Develop the website in which the team presented their results on the iGEM page.",
+      "link": "https://2022.igem.wiki/iiser-tirupati-india/index.html",
+      "tags": ["synthetic-biology", "iGEM", "web-development"]
     },
     {
       "id": "igem-2023",
       "year": "2023",
-      "title": "Bioremediation Using Engineered Microbes",
-      "team": "IISER Tirupati",
-      "role": "Project Contributor",
-      "description": "Worked on bioremediation strategies using genetically engineered bacteria. Involved in literature review, experimental planning, and analysis of microbial growth kinetics.",
+      "title": "AnthraFelix: a genetically engineered probiotic therapeutic for IBS-D",
+      "team": "IISER Tirupati iGEM Team",
+      "role": "Web Developer",
+      "description": "Helped Develop the website in which the team presented their results on the iGEM page.",
       "link": "#",
-      "tags": ["synthetic-biology", "environmental-science"]
+      "tags": ["synthetic-biology", "iGEM", "web-development"]
     }
   ]
 }
