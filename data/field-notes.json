@@ -1,0 +1,15 @@
+{
+  "notes": [
+    {
+      "id": "field-note-comphys",
+      "subject": "Computational Physics",
+      "title": "Running Simulations Without Crying",
+      "subtitle": "A survival guide to numerical methods, ODEs, and when to just trust the solver",
+      "teaser": "Notes from the trenches of learning computational physics — covering numerical integration, stability nightmares, and the dark arts of making simulations actually converge. Written while crying, revised after not crying.",
+      "tags": ["numerical methods", "Python", "ODEs", "simulation", "scipy"],
+      "status": "Draft",
+      "link": "#",
+      "lastUpdated": "2026-06-17"
+    }
+  ]
+}

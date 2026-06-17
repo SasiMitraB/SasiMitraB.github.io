@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Projects - Sasi Mitra Behara">
+    <meta name="description" content="Projects & Field Notes - Sasi Mitra Behara | Work across synth bio, science communication, code, and self-written learning notes.">
     <title>Projects | Sasi Mitra Behara</title>
     <meta name="theme-color" content="#1a1512">
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <link rel="shortcut icon" href="./favicon.svg">
-    <link rel="apple-touch-icon" href="./app_badge.png">
-    <link rel="manifest" href="./site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../app_badge.png">
+    <link rel="manifest" href="../site.webmanifest">
 
-    <link rel="stylesheet" href="./style/site-theme.css">
+    <link rel="stylesheet" href="../style/site-theme.css">
 
     <!-- KaTeX for LaTeX math rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-    <script defer src="./utils/katex-init.js"></script>
+    <script defer src="../utils/katex-init.js"></script>
 
     <!-- Component Loader -->
-    <script src="./ui/components/component-loader.js"></script>
+    <script src="../ui/components/component-loader.js"></script>
 </head>
 <body data-background-mode="true">
     <canvas id="fluid-canvas" aria-hidden="true"></canvas>
@@ -70,12 +70,27 @@
                     <p class="loading-message">Loading repositories...</p>
                 </div>
             </section>
+
+            <!-- Field Notes Section -->
+            <section class="projects-section field-notes-section">
+                <div class="section-header field-notes-header">
+                    <div class="field-notes-eyebrow">
+                        <span class="field-notes-icon">✦</span>
+                        <span>Learning in Public</span>
+                    </div>
+                    <h2>Field Notes</h2>
+                    <p>Notes I wrote while trying to learn something. Rough around the edges, honest about the confusion, and shared in case they help someone else.</p>
+                </div>
+                <div class="field-notes-grid" id="field-notes-container">
+                    <p class="loading-message">Loading notes...</p>
+                </div>
+            </section>
         </main>
 
         <div id="footer-container"></div>
     </div>
 
-    <script src="./effects/index.js"></script>
-    <script src="./ui/rendering/projects-renderer.js"></script>
+    <script src="../effects/index.js"></script>
+    <script src="../ui/rendering/projects-renderer.js"></script>
 </body>
 </html>
