@@ -23,6 +23,14 @@
       "link": "https://github.com/SasiMitraB/CitationConstellation",
       "tags": ["citations", "research"],
       "featured": false
+    },
+      {
+      "id": "mcFitter",
+      "name": "mcFitter Bayesian Sampler",
+      "description": "mcFitter is a lightweight Bayesian curve-fitting toolkit built around emcee. Given a parametric functional form and data believed to follow it, mcFitter recovers the form's parameters via MCMC; full posteriors, parameter uncertainties and correlations (corner plots), and convergence diagnostics (trace plots).",
+      "link": "https://github.com/SasiMitraB/mcFitter",
+      "tags": ["curve-fitting", "statistics"],
+      "featured": false
     }
   ]
 }
