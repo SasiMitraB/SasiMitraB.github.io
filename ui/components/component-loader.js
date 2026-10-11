@@ -75,27 +75,34 @@
             return;
         }
 
+        const setMenuOpen = (open) => {
+            hamburgerBtn.classList.toggle('open', open);
+            nav.classList.toggle('open', open);
+            hamburgerBtn.setAttribute('aria-expanded', String(open));
+        };
+
         // Hamburger menu toggle
         hamburgerBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            hamburgerBtn.classList.toggle('open');
-            nav.classList.toggle('open');
+            setMenuOpen(!nav.classList.contains('open'));
         });
 
         // Close menu when a regular nav link is clicked
         nav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                hamburgerBtn.classList.remove('open');
-                nav.classList.remove('open');
-            });
+            link.addEventListener('click', () => setMenuOpen(false));
+        });
+
+        // Close menu on Escape and return focus to the toggle
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && nav.classList.contains('open')) {
+                setMenuOpen(false);
+                hamburgerBtn.focus();
+            }
         });
 
         // Handle window resize
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) {
-                if (hamburgerBtn) hamburgerBtn.classList.remove('open');
-                if (nav) nav.classList.remove('open');
-            }
+            if (window.innerWidth > 768) setMenuOpen(false);
         });
     }
 

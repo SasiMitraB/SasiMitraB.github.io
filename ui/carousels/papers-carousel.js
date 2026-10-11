@@ -5,6 +5,7 @@
     ];
 
     let papers = [];
+    let lastFocused = null;
 
     document.addEventListener("DOMContentLoaded", initPapersCarousel);
 
@@ -67,31 +68,57 @@
 
         if (closeBtn) {
             closeBtn.addEventListener("click", function () {
-                modal.classList.remove("show");
-                modal.setAttribute("aria-hidden", "true");
+                closePaperModal(modal);
             });
         }
 
         modal.addEventListener("click", function (event) {
             if (event.target === modal) {
-                modal.classList.remove("show");
-                modal.setAttribute("aria-hidden", "true");
+                closePaperModal(modal);
             }
         });
 
         document.addEventListener("keydown", function (event) {
-            if (event.key === "Escape" && modal.classList.contains("show")) {
-                modal.classList.remove("show");
-                modal.setAttribute("aria-hidden", "true");
+            if (!modal.classList.contains("show")) return;
+
+            if (event.key === "Escape") {
+                closePaperModal(modal);
+            } else if (event.key === "Tab") {
+                trapFocus(modal, event);
             }
         });
+    }
+
+    function closePaperModal(modal) {
+        modal.classList.remove("show");
+        modal.setAttribute("aria-hidden", "true");
+        if (lastFocused && document.contains(lastFocused)) {
+            lastFocused.focus();
+        }
+        lastFocused = null;
+    }
+
+    function trapFocus(modal, event) {
+        const focusable = Array.from(
+            modal.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')
+        );
+        if (!focusable.length) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (event.shiftKey && (document.activeElement === first || !modal.contains(document.activeElement))) {
+            event.preventDefault();
+            last.focus();
+        } else if (!event.shiftKey && (document.activeElement === last || !modal.contains(document.activeElement))) {
+            event.preventDefault();
+            first.focus();
+        }
     }
 
     function createPaperCard(paper, index) {
         const card = document.createElement("article");
         card.className = "paper-card panel";
-        card.setAttribute("role", "button");
-        card.setAttribute("tabindex", "0");
 
         const title = cleanBibValue(paper.fields.title || "Untitled");
         const journal = cleanBibValue(paper.fields.journal || "Publication");
@@ -102,18 +129,16 @@
             '<div class="paper-meta">' + escapeHtml(journal) + (year ? " &bull; " + escapeHtml(year) : "") + "</div>",
             '<h3 class="paper-title">' + escapeHtml(title) + "</h3>",
             '<p class="paper-authors">' + authors + "</p>",
-            '<div class="paper-links">' + createLinksHtml(paper, true) + "</div>"
+            '<div class="paper-links">' +
+                '<button type="button" class="btn btn-secondary card-btn paper-details-btn">Abstract</button>' +
+                createLinksHtml(paper, true) +
+            "</div>"
         ].join("");
 
+        // The whole card opens the abstract for mouse users; keyboard and
+        // screen reader users get the explicit Abstract button.
         card.addEventListener("click", function () {
             openPaperModal(index);
-        });
-
-        card.addEventListener("keydown", function (event) {
-            if (event.key === "Enter" || event.key === " ") {
-                event.preventDefault();
-                openPaperModal(index);
-            }
         });
 
         card.querySelectorAll("a").forEach(function (link) {
@@ -145,8 +170,12 @@
         document.getElementById("modal-abstract").textContent = abstract;
         document.getElementById("modal-links").innerHTML = createLinksHtml(paper, false);
 
+        lastFocused = document.activeElement;
         modal.classList.add("show");
         modal.setAttribute("aria-hidden", "false");
+
+        const closeBtn = modal.querySelector(".modal-close");
+        (closeBtn || modal.querySelector(".modal-panel")).focus();
     }
 
     function createLinksHtml(paper, compact) {
